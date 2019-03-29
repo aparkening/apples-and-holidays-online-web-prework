@@ -67,17 +67,10 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     Puts "#{season}:"
     holiday_string = "#{holiday}:"
-    
-
-    
-    puts "index is #{"
+    holiday.each do |supply|
+    puts "index is #{supply.index}"
  
     
-    
-    holiday_supplies = holiday.join
-    
-    holiday_string << 
-    holiday.each do |supply|
         
     
     
