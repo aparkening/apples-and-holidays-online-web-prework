@@ -49,11 +49,6 @@ end
 
 # Iterate through given hash and output all supplies for each holiday and season
 def all_supplies_in_holidays(holiday_hash)
-  
-  holiday_hash.keys = holiday_hash.keys.to_s
-  
-  binding.pry
-  
   holiday_string = ""
   supply_string = ""
 
@@ -63,6 +58,10 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+
+binding.pry
+
+ holiday_hash.keys = holiday_hash.keys.to_s
 
   holiday_hash.each do |season, holiday|
     Puts "#{season}:"
