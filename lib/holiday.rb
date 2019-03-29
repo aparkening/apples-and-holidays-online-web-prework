@@ -76,13 +76,9 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
-# Return array of all holiday names that contain BBQ
+# Return array of all holiday names that contain "BBQ"
 def all_holidays_with_bbq(holiday_hash)
-  # return an array of holiday names (as symbols) where supply lists
-  # include the string "BBQ"
-
   key_array = [ ]
-
   holiday_hash.each do |season, holiday|
     holiday.each do |holiday_name, supply|
       if supply.include?("BBQ")
@@ -90,29 +86,5 @@ def all_holidays_with_bbq(holiday_hash)
       end
     end
   end
-  binding.pry
   key_array
 end
-
-holiday_hash = {
-  :winter => {
-    :christmas => ["Lights", "Wreath"],
-    :new_years => ["Party Hats"]
-  },
-  :summer => {
-    :fourth_of_july => ["Fireworks", "BBQ"]
-  },
-  :fall => {
-    :thanksgiving => ["Turkey"]
-  },
-  :spring => {
-    :memorial_day => ["BBQ"]
-  }
-}
-all_holidays_with_bbq(holiday_hash)
-
-
-
-
-
-
