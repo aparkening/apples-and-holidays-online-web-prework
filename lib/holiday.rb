@@ -66,7 +66,6 @@ def all_supplies_in_holidays(holiday_hash)
     binding.pry
     
     
-    
     puts "#{season}:"
     holiday_string = "#{holiday}:"
     
