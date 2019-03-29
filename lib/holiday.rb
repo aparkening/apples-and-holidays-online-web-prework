@@ -61,6 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     season = season.to_s
     add season to string
+    holiday.size 
     
     <<-
     
@@ -69,48 +70,6 @@ def all_supplies_in_holidays(holiday_hash)
     
 
 end
-
-
-  # 
-
-    before do
-
-    # This funny looking <<-TEXT thing is called heredoc. It's a multi-line string
-    # delimiter that makes it really easy for us to write multi-line strings in the middle
-    # of code. The TEXT part is arbitrary too. It could easily have been <<-BLAHBLAH. The only
-    # requirement is that you use the same word to end the multi-line string.
-
-    # For more info about heredocs, see this link: http://en.wikibooks.org/wiki/Ruby_Programming/Here_documents
-
-      @output = <<-TEXT
-Winter:
-  Christmas: Lights, Wreath
-  New Years: Party Hats
-Summer:
-  Fourth Of July: Fireworks, BBQ
-Fall:
-  Thanksgiving: Turkey
-Spring:
-  Memorial Day: BBQ
-TEXT
-    end
-
-    # For the purposes of this test, we are assuming that you decided to output your list
-    # of holiday supplies line by line. If, on the other hand, you decided to output it
-    # as one big chunk, comment out this test, and uncomment the one below it.
-
-    it "should output the formatted list of holidays and their supplies" do
-      @output.each_line do |line|
-        expect($stdout).to receive(:puts).with(line.chomp)
-      end
-
-      all_supplies_in_holidays(holiday_supplies)
-    end
-
-    # it "should output the formatted list of holidays and their supplies" do
-    #   expect($stdout).to receive(:puts).with(@output)
-    #   all_supplies_in_holidays(holiday_supplies)
-    # end
 
 
 
