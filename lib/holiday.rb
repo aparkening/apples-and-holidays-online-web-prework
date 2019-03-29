@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
       
     holiday.each do |holiday_name, supply|
       holiday_name = holiday_name.to_s.capitalize
-      holiday_string = "#{holiday_name}:"
+      holiday_string = "#{holiday_name}: "
       supply_string = supply.join(", ")
       holiday_string << supply_string
       binding.pry
