@@ -68,6 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
         name_array.collect do |word|
           word.capitalize!
         end
+      
       #holiday_name = holiday_name.to_s.gsub("_"," ").capitalize
       #holiday_name.capitalize
       holiday_string = "   #{holiday_name}: "
