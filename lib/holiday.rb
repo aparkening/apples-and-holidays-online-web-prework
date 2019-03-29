@@ -27,13 +27,13 @@ end
   
 # Add supply to winter holidays
 def add_supply_to_winter_holidays(holiday_hash, supply)
+
   holiday_hash[:winter].collect do |holiday, gear| 
     holiday << supply 
   end
+  holiday_hash
   
   binding.pry
-  
-  holiday_hash
 end
 
 
