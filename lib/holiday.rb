@@ -61,9 +61,10 @@ def all_supplies_in_holidays(holiday_hash)
 
   binding.pry
 
-  holiday_hash.keys = holiday_hash.keys.to_s
 
   holiday_hash.each do |season, holiday|
+    season = season.to_s 
+    holiday = holiday.to_s
     Puts "#{season}:"
     holiday_string = "#{holiday}:"
     holiday.each do |supply|
