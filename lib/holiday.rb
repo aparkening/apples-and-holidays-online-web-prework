@@ -81,8 +81,12 @@ def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 
-contacts.each do |person, data|
- data.each do |attribute, value|
+  holiday_hash.each do |season, holiday|
+    holiday.each do |holiday_name, supply|
+      if suite == :suite_a && name.start_with?("A")
+      winner = name
+    end
+   
 
 end
 
