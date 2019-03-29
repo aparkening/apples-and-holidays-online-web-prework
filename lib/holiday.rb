@@ -86,10 +86,12 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday|
     holiday.each do |holiday_name, supply|
       if supply == :BBQ 
-        key_array winner = name
+        key_array << holiday_name
       end
-   
-
+    end
+  end
+  
+  key_array
 end
 
 
