@@ -50,7 +50,8 @@ end
 # Iterate through given hash and output all supplies for each holiday and season
 def all_supplies_in_holidays(holiday_hash)
   
-  holiday_hash.keys.to_s
+  holiday_hash.keys = holiday_hash.keys.to_s
+  
   binding.pry
   
   holiday_string = ""
@@ -67,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
     Puts "#{season}:"
     holiday_string = "#{holiday}:"
     
-    join 
+
     
     puts "index is #{"
  
