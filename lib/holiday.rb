@@ -59,7 +59,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
 loop through holidays for supplies
-
+  holiday_hash.each do ||
 
 end
 
