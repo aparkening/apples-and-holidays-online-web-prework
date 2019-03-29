@@ -33,27 +33,14 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash
 end
 
-holiday_hash = {
-  :winter => {
-    :christmas => ["Lights", "Wreath"],
-    :new_years => ["Party Hats"]
-  },
-  :summer => {
-    :fourth_of_july => ["Fireworks", "BBQ"]
-  },
-  :fall => {
-    :thanksgiving => ["Turkey"]
-  },
-  :spring => {
-    :memorial_day => ["BBQ"]
-  }
-}
-supply="streamers"
-add_supply_to_winter_holidays(holiday_hash, supply)
-
+# Add supply to the memorial day array
 def add_supply_to_memorial_day(holiday_hash, supply)
-  # again, holiday_hash is the same as the ones above
-  # add the second argument to the memorial day array
+
+
+  holiday_hash[:winter].collect do |holiday, gear| gear << supply
+  end
+  puts holiday_hash
+  holiday_hash
 
 end
 
