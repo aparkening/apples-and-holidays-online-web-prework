@@ -49,6 +49,8 @@ end
 
 # Iterate through given hash and output all supplies for each holiday and season
 def all_supplies_in_holidays(holiday_hash)
+  
+  
   holiday_string = ""
 
   # Winter:
