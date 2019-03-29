@@ -84,9 +84,6 @@ def all_holidays_with_bbq(holiday_hash)
   key_array = [ ]
 
   holiday_hash.each do |season, holiday|
-    puts season
-    puts holiday
-    
     holiday.each do |holiday_name, supply|
       if supply.include?("BBQ")
         key_array << holiday_name
@@ -94,9 +91,7 @@ def all_holidays_with_bbq(holiday_hash)
     end
   end
   
-         binding.pry
-  
-  puts key_array
+  key_array
 end
 
 holiday_hash = {
