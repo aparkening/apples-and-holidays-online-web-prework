@@ -25,14 +25,6 @@ end
   # 
   
   
-    describe "#add_supply_to_winter_holidays" do
-    it "iterates through winter holidays adds a supply to each one" do
-      add_supply_to_winter_holidays(holiday_supplies, "Balloons")
-      expect(holiday_supplies[:winter][:christmas]).to include("Balloons")
-      expect(holiday_supplies[:winter][:new_years]).to include("Balloons")
-    end
-  end
-  
 # Add supply to winter holidays
 def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash[:winter].collect do |holiday, gear| 
