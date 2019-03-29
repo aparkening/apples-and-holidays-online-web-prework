@@ -92,7 +92,7 @@ def all_holidays_with_bbq(holiday_hash)
     end
   end
   
-  key_array
+  puts key_array
 end
 
 holiday_hash = {
