@@ -50,6 +50,8 @@ end
 # Iterate through given hash and output all supplies for each holiday and season
 def all_supplies_in_holidays(holiday_hash)
   
+  family_members.keys
+  
   
   holiday_string = ""
 
