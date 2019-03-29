@@ -41,11 +41,10 @@ end
 # Add holiday and associated supplies to a given season
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
 
-  holiday_hash_hash[season][:holiday_name] << "Assembly"
+  holiday_hash_hash[season][holiday_name] << supply_array
 
-  Match to season
-  Add name and supplies 
-
+  binding.pry 
+  
   holiday_hash
 
 end
