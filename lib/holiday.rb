@@ -46,10 +46,7 @@ end
 
 # Return an array of all winter supply values
 def all_winter_holiday_supplies(holiday_hash)
-  
-  
-family_members.values
-
+  holiday_hash[:winter].values 
 end
 
 def all_supplies_in_holidays(holiday_hash)
