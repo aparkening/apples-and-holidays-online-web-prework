@@ -68,17 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
     Puts "#{season}:"
     holiday_string = "#{holiday}:"
     holiday.each do |supply|
-    puts "index is #{supply.index}"
- 
-    
-        
-    
-    
-    <<-
-    
-    
-    
-    
+    puts "#{supply} index is #{supply.index}"
 
 end
 
