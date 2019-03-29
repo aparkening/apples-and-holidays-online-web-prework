@@ -68,6 +68,7 @@ binding.pry
     holiday_string = "#{holiday}:"
     holiday.each do |supply|
     puts "#{supply} index is #{supply.index}"
+  end
 
 end
 
