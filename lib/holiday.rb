@@ -49,7 +49,7 @@ end
 
 # Iterate through given hash and output all supplies for each holiday and season
 def all_supplies_in_holidays(holiday_hash)
-
+  
 
   # Winter:
   #   Christmas: Lights, Wreath
@@ -59,6 +59,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
   holiday_hash.each do |season, holiday|
+    season = season.to_s
     add season to string
     
     
