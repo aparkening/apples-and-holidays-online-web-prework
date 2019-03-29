@@ -69,33 +69,13 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize!
         end
       holiday_name = name_array.join(" ")
-      #holiday_name = holiday_name.to_s.gsub("_"," ").capitalize
-      #holiday_name.capitalize
       holiday_string = "   #{holiday_name}: "
       supply_string = supply.join(", ")
       holiday_string << supply_string
       puts holiday_string
     end
   end
-
 end
-
-holiday_hash = {
-  :winter => {
-    :christmas => ["Lights", "Wreath"],
-    :new_years => ["Party Hats"]
-  },
-  :summer => {
-    :fourth_of_july => ["Fireworks", "BBQ"]
-  },
-  :fall => {
-    :thanksgiving => ["Turkey"]
-  },
-  :spring => {
-    :memorial_day => ["BBQ"]
-  }
-}
-all_supplies_in_holidays(holiday_hash)
 
 
 def all_holidays_with_bbq(holiday_hash)
