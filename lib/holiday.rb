@@ -84,7 +84,6 @@ def all_holidays_with_bbq(holiday_hash)
   key_array = [ ]
 
   holiday_hash.each do |season, holiday|
-    binding.pry
     puts season
     puts holiday
     
@@ -94,6 +93,8 @@ def all_holidays_with_bbq(holiday_hash)
       end
     end
   end
+  
+      binding.pry
   
   puts key_array
 end
