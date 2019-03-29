@@ -90,7 +90,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |holiday_name, supply|
        binding.pry
        
-      
+      supply.include?("BBQ")
        
       if supply == :BBQ 
         key_array << holiday_name
