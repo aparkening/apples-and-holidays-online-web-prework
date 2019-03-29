@@ -67,6 +67,10 @@ def all_supplies_in_holidays(holiday_hash)
     holiday_string = "#{holiday}:"
     
     join 
+    
+ 
+    
+    
     holiday_supplies = holiday.join
     
     holiday_string << 
