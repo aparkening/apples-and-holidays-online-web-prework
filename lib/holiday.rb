@@ -31,7 +31,6 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
 
   holiday_hash[:winter].collect do |holiday, gear| 
     holiday << supply 
-    [:fourth_of_july][1]
   end
 
 end
