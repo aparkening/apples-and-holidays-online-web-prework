@@ -33,11 +33,9 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash
 end
 
-# Add supply to the memorial day array
+# Add supply to memorial day array
 def add_supply_to_memorial_day(holiday_hash, supply)
-
-
-  holiday_hash[:winter].collect do |holiday, gear| gear << supply
+  holiday_hash[:spring][:memorial_day]  << supply
   end
   puts holiday_hash
   holiday_hash
