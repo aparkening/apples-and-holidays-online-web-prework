@@ -54,6 +54,7 @@ def all_supplies_in_holidays(holiday_hash)
   binding.pry
   
   holiday_string = ""
+  supply_string = ""
 
   # Winter:
   #   Christmas: Lights, Wreath
